@@ -14,12 +14,22 @@ public class Hello {
 	}
 
 	public static String greetingMessage(){
-		// TODO Implement this method to return string "Hello GitHub".
-		return "";
+		// TODO Implement this method to return string "Hello GitHub"
+		return "Hello GitHub";
 	}
 	
 	public static int[] bubbleSort(int[] array){
 		// TODO Implement this method to sort the given array in an ascending order and return the sorted array.
+		for(int i=0;i<array.length;i++){
+			for(int j=0;j<array.length-i-1;j++){
+				int sw;
+				if(array[j]>array[j+1]){
+					sw=array[j];
+					array[j]=array[j+1];
+					array[j+1]=sw;
+				}
+			}
+		}
 		return array;
 	}
 	
